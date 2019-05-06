@@ -22,7 +22,7 @@ start:
     mov sp, 0x7C00
     sti                         ; Release ints
 
-    ; From this point onwareds well be using
+    ; From this point onwards well be using
     ; BIOS int since they are available for
     ; 16bits Real mode.
 
