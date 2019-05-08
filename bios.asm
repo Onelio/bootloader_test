@@ -7,7 +7,7 @@ Print:
     or al, al
     jz .END
 
-    mov ax, 0x0E                        ; Teletype output subfunction
+    mov ah, 0x0E                        ; Teletype output subfunction
     mov bx, 9                           ; Dummy in this mode
     int 0x10                            ; Video Services Interruption
     jmp .PRINTLOOP

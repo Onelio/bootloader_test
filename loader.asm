@@ -3,7 +3,7 @@ org 0x7C00                      ; Link everything from where the
                                 ; BIOS puts the boot in memory.
 global main
 main:
-    jmp 0000:START
+    jmp START
 
 %include "bootsector.asm"
 %include "bios.asm"
